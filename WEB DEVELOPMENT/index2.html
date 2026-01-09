@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDG 3: Health Simulator</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+    <h1>SDG 3: Health Score Simulator</h1>
+
+    <form id="healthForm">
+        <label>Age: <input type="number" id="age" required /></label>
+        <label>Hours of Sleep: <input type="number" id="sleep" required /></label>
+        <label>Exercise (mins): <input type="number" id="exercise" required /></label>
+        <label>Water (glasses): <input type="number" id="water" required /></label>
+        <br>
+        <button type="submit" class="btn">Simulate Health Score</button>
+    </form>
+
+    <div id="output">
+        <h2>Your Health Score: <span id="score">--</span></h2>
+        <canvas id="chart" width="200" height="200"></canvas>
+        <div id="emoji">🤔</div>
+    </div>
+
+    <h3>Previous Simulations</h3>
+    <table id="historyTable">
+        <thead>
+            <tr>
+                <th>Age</th>
+                <th>Sleep</th>
+                <th>Exercise</th>
+                <th>Water</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button class="btn" style="margin-top: 20px;" id="clearData">Clear My Data</button>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
